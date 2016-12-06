@@ -1,7 +1,7 @@
 <?php
 /*
  *  Author: Wonkasoft | @Wonkasoft
- *  URL: wonkasoft.com | 
+ *  URL: http://wonkasoft.com | 
  *  Custom functions, support, custom post types and more.
  */
 
