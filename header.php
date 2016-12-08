@@ -37,7 +37,7 @@
 			<!-- header row -->
 			<div class="row">
 					<!-- logo -->
-					<div class="col-xs-4">
+					<div class="col-xs-4 vert-middle">
 					<div class="logo">
 						<a href="<?php echo home_url(); ?>">
 							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
@@ -48,21 +48,31 @@
 					<!-- /logo -->
 
 					<!-- social -->
-					<div class="col-xs-4">
+					<div class="col-xs-4 vert-middle">
 					<ul class="social-list">
 						<li>
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook" class="social-img">
 							</a>
 						</li>
+						<li>
+							<a href="<?php echo home_url(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="facebook" class="social-img">
+							</a>
+						</li>
+						<li>
+							<a href="<?php echo home_url(); ?>">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="facebook" class="social-img">
+							</a>
+						</li>
 					</ul>
 					</div>
-					<!-- /logo -->
+					<!-- /social -->
 
 					<!-- nav -->
-					<div class="col-xs-4">
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
+					<div class="col-xs-4 vert-middle">
+					<nav class="nav top-nav" role="navigation">
+						<?php jbd_nav(); ?>
 					</nav>
 					</div>
 					<!-- /nav -->

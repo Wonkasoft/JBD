@@ -47,15 +47,15 @@ if (function_exists('add_theme_support'))
     add_theme_support('automatic-feed-links');
 
     // Localisation Support
-    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+    load_theme_textdomain('jbd', get_template_directory() . '/languages');
 }
 
 /*------------------------------------*\
 	Functions
 \*------------------------------------*/
 
-// HTML5 Blank navigation
-function html5blank_nav()
+// JBD navigation
+function jbd_nav()
 {
 	wp_nav_menu(
 	array(
@@ -79,8 +79,8 @@ function html5blank_nav()
 	);
 }
 
-// Load HTML5 Blank scripts (header.php)
-function html5blank_header_scripts()
+// Load JBD scripts (header.php)
+function jbd_header_scripts()
 {
     if ($GLOBALS['pagenow'] != 'wp-login.php' && !is_admin()) {
 
@@ -90,13 +90,13 @@ function html5blank_header_scripts()
         wp_register_script('modernizr', get_template_directory_uri() . '/js/lib/modernizr-2.7.1.min.js', array(), '2.7.1'); // Modernizr
         wp_enqueue_script('modernizr'); // Enqueue it!
 
-        wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
-        wp_enqueue_script('html5blankscripts'); // Enqueue it!
+        wp_register_script('jbdscripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0'); // Custom scripts
+        wp_enqueue_script('jbdscripts'); // Enqueue it!
     }
 }
 
-// Load HTML5 Blank conditional scripts
-function html5blank_conditional_scripts()
+// Load JBD conditional scripts
+function jbd_conditional_scripts()
 {
     if (is_page('pagenamehere')) {
         wp_register_script('scriptname', get_template_directory_uri() . '/js/scriptname.js', array('jquery'), '1.0.0'); // Conditional script(s)
@@ -104,8 +104,8 @@ function html5blank_conditional_scripts()
     }
 }
 
-// Load HTML5 Blank styles
-function html5blank_styles()
+// Load JBD styles
+function jbd_styles()
 {
     wp_register_style('normalize', get_template_directory_uri() . '/normalize.css', array(), '1.0', 'all');
     wp_enqueue_style('normalize'); // Enqueue it!
@@ -114,17 +114,17 @@ function html5blank_styles()
     wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js', array('jquery'), '1.9.1', true); 
     wp_enqueue_script( 'bootstrap-js', '//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js', array('jquery'), true); 
 
-    wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
-    wp_enqueue_style('html5blank'); // Enqueue it!
+    wp_register_style('jbd', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('jbd'); // Enqueue it!
 }
 
-// Register HTML5 Blank Navigation
+// Register JBD Navigation
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'html5blank'), // Main Navigation
-        'sidebar-menu' => __('Sidebar Menu', 'html5blank'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'html5blank') // Extra Navigation if needed (duplicate as many as you need!)
+        'header-menu' => __('Header Menu', 'jbd'), // Main Navigation
+        'sidebar-menu' => __('Sidebar Menu', 'jbd'), // Sidebar Navigation
+        'extra-menu' => __('Extra Menu', 'jbd') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
@@ -170,8 +170,8 @@ if (function_exists('register_sidebar'))
 {
     // Define Sidebar Widget Area 1
     register_sidebar(array(
-        'name' => __('Widget Area 1', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 1', 'jbd'),
+        'description' => __('Description for this widget-area...', 'jbd'),
         'id' => 'widget-area-1',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -181,8 +181,8 @@ if (function_exists('register_sidebar'))
 
     // Define Sidebar Widget Area 2
     register_sidebar(array(
-        'name' => __('Widget Area 2', 'html5blank'),
-        'description' => __('Description for this widget-area...', 'html5blank'),
+        'name' => __('Widget Area 2', 'jbd'),
+        'description' => __('Description for this widget-area...', 'jbd'),
         'id' => 'widget-area-2',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
@@ -247,7 +247,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'html5blank') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'jbd') . '</a>';
 }
 
 // Remove Admin bar
@@ -270,7 +270,7 @@ function remove_thumbnail_dimensions( $html )
 }
 
 // Custom Gravatar in Settings > Discussion
-function html5blankgravatar ($avatar_defaults)
+function jbdgravatar ($avatar_defaults)
 {
     $myavatar = get_template_directory_uri() . '/img/gravatar.jpg';
     $avatar_defaults[$myavatar] = "Custom Gravatar";
@@ -288,7 +288,7 @@ function enable_threaded_comments()
 }
 
 // Custom Comments Callback
-function html5blankcomments($comment, $args, $depth)
+function jbdcomments($comment, $args, $depth)
 {
 	$GLOBALS['comment'] = $comment;
 	extract($args, EXTR_SKIP);
@@ -336,12 +336,12 @@ function html5blankcomments($comment, $args, $depth)
 \*------------------------------------*/
 
 // Add Actions
-add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_head
-add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
+add_action('init', 'jbd_header_scripts'); // Add Custom Scripts to wp_head
+add_action('wp_print_scripts', 'jbd_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
-add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
-add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('wp_enqueue_scripts', 'jbd_styles'); // Add Theme Stylesheet
+add_action('init', 'register_html5_menu'); // Add JBD Menu
+add_action('init', 'create_post_type_html5'); // Add our JBD Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -360,7 +360,7 @@ remove_action('wp_head', 'rel_canonical');
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 
 // Add Filters
-add_filter('avatar_defaults', 'html5blankgravatar'); // Custom Gravatar in Settings > Discussion
+add_filter('avatar_defaults', 'jbdgravatar'); // Custom Gravatar in Settings > Discussion
 add_filter('body_class', 'add_slug_to_body_class'); // Add slug to body class (Starkers build)
 add_filter('widget_text', 'do_shortcode'); // Allow shortcodes in Dynamic Sidebar
 add_filter('widget_text', 'shortcode_unautop'); // Remove <p> tags in Dynamic Sidebars (better!)
@@ -399,18 +399,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
-            'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
-            'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'name' => __('JBD Custom Post', 'jbd'), // Rename these to suit
+            'singular_name' => __('JBD Custom Post', 'jbd'),
+            'add_new' => __('Add New', 'jbd'),
+            'add_new_item' => __('Add New JBD Custom Post', 'jbd'),
+            'edit' => __('Edit', 'jbd'),
+            'edit_item' => __('Edit JBD Custom Post', 'jbd'),
+            'new_item' => __('New JBD Custom Post', 'jbd'),
+            'view' => __('View JBD Custom Post', 'jbd'),
+            'view_item' => __('View JBD Custom Post', 'jbd'),
+            'search_items' => __('Search JBD Custom Post', 'jbd'),
+            'not_found' => __('No JBD Custom Posts found', 'jbd'),
+            'not_found_in_trash' => __('No JBD Custom Posts found in Trash', 'jbd')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages
@@ -420,7 +420,7 @@ function create_post_type_html5()
             'editor',
             'excerpt',
             'thumbnail'
-        ), // Go to Dashboard Custom HTML5 Blank post for supports
+        ), // Go to Dashboard Custom JBD post for supports
         'can_export' => true, // Allows export in Tools > Export
         'taxonomies' => array(
             'post_tag',

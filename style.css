@@ -77,10 +77,18 @@ input:focus {
 	margin:0 auto;
 	position:relative;
 }
+
 /* header */
 .header {
 
 }
+
+/*vertical center*/
+.vert-middle {
+	display: inline-block;
+	vertical-align: middle;
+}
+
 /* logo */
 .logo {
 
@@ -88,14 +96,38 @@ input:focus {
 .logo-img {
 	width: 200px;
 }
-/* nav */
-.nav {
 
+/* socials */
+.social-list {
+	list-style: none;
+	padding: 0;
+	height: 200px;
 }
+
+.social-list > li {
+	display: inline;
+	padding: 5px;
+}
+
+.social-img {
+	width: 50px;
+	height: 50px;
+}
+
+/* nav */
+.top-nav > div > ul {
+	list-style: none;
+}
+
+.top-nav > div > ul > li {
+	display: inline;
+}
+
 /* sidebar */
 .sidebar {
 
 }
+
 /* footer */
 .footer {
 
