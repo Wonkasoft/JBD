@@ -49,19 +49,8 @@
 					<!-- /logo -->
 					</button>
 					<div class="collapse navbar-collapse" id="myNavbar">
-					<!-- logo -->
-					<div class="col-xs-hidden vert-middle">
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="img-responsive logo-img">
-						</a>
-					</div>
-					</div>
-					<!-- /logo -->
 					<!-- social -->
-					<div class="col-xs-12 text-center vert-middle">
-					<ul class="social-list">
+					<ul class="nav navbar-nav">
 						<li>
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook" class="img-responsive social-img">
@@ -78,16 +67,8 @@
 							</a>
 						</li>
 					</ul>
-					</div>
 					<!-- /social -->
-
-					<!-- nav -->
-					<div class="col-xs-12 text-center vert-middle">
-					<nav class="nav top-nav" role="navigation">
 						<?php jbd_nav(); ?>
-					</nav>
-					</div>
-					<!-- /nav -->
 					</div>
 			</div>
 			<!-- /header row -->

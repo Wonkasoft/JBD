@@ -104,7 +104,7 @@ input:focus {
 }
 
 section.main {
-	background-image: url('http://localhost/wordpress/wp-content/uploads/2016/12/mainBG.jpg');
+	background-image: url('img/mainBG.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
 	height: 100%;
@@ -150,13 +150,12 @@ section.main {
 .social-list {
 	list-style: none;
 	padding: 0;
+	text-align: center;
 }
 
 .social-list > li {
-	display: inline;
 	padding: 0 10px;
-	position: relative;
-	top: 0;
+	text-align: center;
 }
 
 .social-list > li:hover {
@@ -164,8 +163,7 @@ section.main {
 }
 
 .social-img {
-	max-width: 35px;
-	display: inline;
+	max-width: 35px !important;
 }
 
 /* nav */
@@ -175,91 +173,41 @@ section.main {
 	text-align: center;
 }
 
-.top-nav > div > ul {
-	list-style: none;
-	padding: 0;
-}
-
 .top-nav > ul {
 	list-style: none;
 	padding: 0;
 }
 
-.top-nav > div > ul > li {
-	display: inline;
-	padding: 0;
-	position: absolute;
-	width: 105px;
-}
-
 .top-nav > ul > li {
-	display: inline;
-	padding: 0;
-	position: absolute;
-	width: 105px;
-}
-
-.top-nav > div > ul > li:first-child {
-	left: -8%;
-	z-index: 100;
-	background-image: url("img/eventsbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
+	padding: 10px 0;
 }
 
 .top-nav > ul > li:first-child {
-	left: -8%;
-	z-index: 100;
+	/*z-index: 100;
 	background-image: url("img/eventsbg.png");
 	background-size: 100%;
-	background-repeat: no-repeat;
-}
-
-.top-nav > div > ul > li:nth-child(2) {
-	left: 33%;
-	background-image: url("img/bookingbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 250;
+	background-repeat: no-repeat;*/
 }
 
 .top-nav > ul > li:nth-child(2) {
-	left: 33%;
-	background-image: url("img/bookingbg.png");
+	/*background-image: url("img/bookingbg.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	z-index: 250;
-}
-
-
-.top-nav > div > ul > li:last-child {
-	left: 72%;
-	background-image: url("img/galleriesbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 100;
+	z-index: 250;*/
 }
 
 .top-nav > ul > li:last-child {
-	left: 72%;
-	background-image: url("img/galleriesbg.png");
+	/*background-image: url("img/galleriesbg.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
-	z-index: 100;
-}
-
-.top-nav > div > ul > li > a {
-	font-family: 'Oswaldbold';
-	font-weight: 900;
-	font-size: 12pt;
-	color: #fff;
+	z-index: 100;*/
 }
 
 .top-nav > ul > li > a {
 	font-family: 'Oswaldbold';
 	font-weight: 900;
 	font-size: 12pt;
-	color: #fff;
+	color: #000;
 }
 
 /* sidebar */
