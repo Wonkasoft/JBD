@@ -2,10 +2,7 @@
 
 	<main role="main">
 		<!-- section -->
-		<section class="main">
-
-			
-
+		<section class="">
 		</section>
 		<!-- /section -->
 	</main>
