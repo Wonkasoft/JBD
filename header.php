@@ -72,9 +72,15 @@
 					<!-- /social -->
 						<?php jbd_nav(); ?>
 					</div>
+
+
+
 			</div>
 			<!-- /header row -->
 			</div>
+					<div class="col-xs-12 text-center">
+					Test data
+					</div>
 			<!-- header container -->
 			</nav>
 			</section>

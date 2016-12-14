@@ -28,7 +28,7 @@
     <h1 class="page-title">Photos</h1>
     <div class="container-fluid"> 
       <div class="row">
-        <div class="xs-col-12">
+        <div class="xs-col-12 text-center">
           Gmedia code here
         </div>
       </div> <!-- End of row -->
@@ -45,7 +45,7 @@
           This is a collection of track recorded by Jethro BoDidley. Check back for newly added music.
         </div>
 
-        <div class="col-xs-12 col-md-6">
+        <div class="col-xs-12 text-center">
           Gmedia code here
         </div>
       </div> <!-- End of row -->
@@ -80,7 +80,7 @@
     <div class="container-fluid"> 
       <div class="row">
         <div class="col-xs-12 text-center">
-         Contact 7 plugin code here
+         [contact-form-7 id="147" title="Booking-Form"]
        </div>
      </div> <!-- End of row -->
    </div> <!-- End of container -->

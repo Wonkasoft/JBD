@@ -22,8 +22,8 @@
 						<!-- copyright -->
 						<div class="col-xs-12 text-center">
 							<small><p class="copyright">
-								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Created by', 'Wonkasoft'); ?>
-								<a href="//wonkasoft.com" title="Wonkasoft" target="_blank">Wonkasoft</a>
+								&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. All rights reserved. |  Website: <?php _e('Created by', 'Wonkasoft'); ?>
+								<a href="//wonkasoft.com" title="Wonkasoft" target="_blank">Wonkasoft</a>.
 							</p></small>
 							<!-- /copyright -->
 						</div>

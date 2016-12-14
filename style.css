@@ -120,7 +120,6 @@ section.about {
 	height: 100%;
 	width: 100%;
 	padding: 20px;
-	margin:0;
 }
 
 section.photos {
@@ -129,7 +128,7 @@ section.photos {
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
-	margin:0;
+	padding: 20px;
 }
 
 section.music {
@@ -138,6 +137,7 @@ section.music {
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
+	padding: 20px;
 }
 
 section.events {
@@ -146,6 +146,7 @@ section.events {
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
+	padding: 20px;
 }
 
 section.booking {
@@ -154,6 +155,7 @@ section.booking {
 	background-size: 100%;
 	height: 100%;
 	width: 100%;
+	padding: 20px;
 }
 
 /* header */
