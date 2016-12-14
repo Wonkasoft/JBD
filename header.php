@@ -30,7 +30,6 @@
 			<!-- section -->
 			<section class="main">
 
-
 			<!-- header -->
 			<header class="header clear" role="banner">
 
@@ -52,6 +51,9 @@
 						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="img-responsive logo-img">
 						<!-- /logo -->
 					</a>
+					<div class="col-xs-12 hidden-sm hidden-md hidden-lg text-center">
+				<img src="<?php echo get_template_directory_uri(); ?>/img/live.png" alt="Live and Acoustified" class="img-responsive center-block live-img">
+			</div>
 			</div>
 					<div class="collapse navbar-collapse" id="JBDNavbar">
 					<!-- social -->
@@ -76,15 +78,22 @@
 						<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav')); ?>
 					</div>
 			</div>
-
 			<!-- /header row -->
-			</div>
-					<div class="col-xs-12 text-center">
-					Test data
-					</div>
 			<!-- header container -->
 			</nav>
-			</section>
-			<!-- /section -->
 			</header>
 			<!-- /header -->
+			<div class="container">
+			<div class="row">
+			<div class="col-xs-12">
+				<p>
+				Jethro BoDidley is an international rock star who has taken time off from his busy tour to play local clubs, private events and concert venues. Jethro's trademark raspy voice, manic guitar play and unpredictable sense of humor will acoustic-rock the HOUSE.
+				</p>
+				<div class="col-xs-12 text-center">
+            <button class="booknow-btn">book now</button>
+          </div>
+			</div>
+			</div>
+			</div>
+			</section>
+			<!-- /section -->

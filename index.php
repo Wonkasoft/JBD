@@ -3,9 +3,11 @@
 <main role="main">
   <!-- section -->
   <section class="about">
-    <h1 class="page-title">About</h1>
     <div class="container-fluid"> 
       <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-title">About</h1>
+        </div>
         <div class="col-xs-12 col-md-6">
           <img class="img-responsive img-circle" src="<?php echo get_template_directory_uri(); ?>/img/profile-image.jpg" alt="profile-image">
         </div>
@@ -25,10 +27,12 @@
 
   <!-- section -->
   <section class="photos">
-    <h1 class="page-title">Photos</h1>
     <div class="container-fluid"> 
       <div class="row">
-        <div class="xs-col-12 text-center">
+        <div class="col-xs-12">
+          <h1 class="page-title">Photos</h1>
+        </div>
+        <div class="col-xs-12 text-center">
           Gmedia code here
         </div>
       </div> <!-- End of row -->
@@ -38,9 +42,11 @@
 
   <!-- section -->
   <section class="music">
-    <h1 class="page-title">Music</h1>
     <div class="container-fluid"> 
       <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-title">Music</h1>
+        </div>
         <div class="col-xs-12 col-md-6">
           This is a collection of track recorded by Jethro BoDidley. Check back for newly added music.
         </div>
@@ -55,9 +61,11 @@
 
   <!-- section -->
   <section class="events">
-    <h1 class="page-title">Events</h1>
     <div class="container-fluid"> 
       <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-title">Events</h1>
+        </div>
         <div class="col-xs-12 text-center">
           <h2>Here you can find our upcoming events</h2>
         </div>
@@ -76,11 +84,13 @@
 
   <!-- section -->
   <section class="booking">
-    <h1 class="page-title">Booking</h1>
-    <div class="container-fluid"> 
+    <div class="container"> 
       <div class="row">
+        <div class="col-xs-12">
+          <h1 class="page-title">Booking</h1>
+        </div>
         <div class="col-xs-12 text-center">
-         [contact-form-7 id="147" title="Booking-Form"]
+        <?php echo do_shortcode('[contact-form-7 id="24" title="Contact form 1"]'); ?>
        </div>
      </div> <!-- End of row -->
    </div> <!-- End of container -->

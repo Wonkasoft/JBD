@@ -103,55 +103,49 @@ input:focus {
 section.main {
 	background-image: url('img/mainBG.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding:20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 section.about {
 	background-image: url('img/aboutBG.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 section.photos {
 	background-image: url('img/photosBG.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 section.music {
 	background-image: url('img/musicBG.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 section.events {
 	background-image: url('img/eventsBG.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 section.booking {
 	background-image: url('img/bookingBG.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 100%;
-	width: 100%;
-	padding: 20px;
+	background-size: cover;
+	background-position: center center;
+	min-height: 201px;
 }
 
 /* header */
@@ -175,12 +169,34 @@ section.booking {
 
 /* socials */
 .social-nav > li > a > img.social-img {
-	max-width: 25px;
+	max-width: 35px;
+}
+
+.social-nav {
+	margin-top: 18px;
 }
 
 /* nav */
 .navbar {
 	margin-bottom: 0;
+}
+
+.navbar-inverse {
+	background-color: transparent;
+	border: none;
+}
+
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+	background-color: rgba(51,51,51,.3);
+}
+
+.navbar-inverse .navbar-collapse {
+	border: none;
+}
+
+.navbar-collapse {
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 .navbar-toggle {
@@ -199,6 +215,7 @@ section.booking {
 	height: 65px;
 	color: #000;
 	border:none;
+	margin: 25px 0;
 }
 
 .booknow-btn:hover {
@@ -212,13 +229,63 @@ section.booking {
 	border:none;
 }
 
-/* sidebar */
-.sidebar {
-
+/* pages css */
+/* page titles */
+.page-title {
+	font-family: 'Oswaldbold';
+	font-size: 18pt;
+	font-weight: 900;
+	opacity: .4;
+	text-transform: uppercase;
 }
 
-/* footer */
+/* main */
+.live-img {
+	max-width: 190px;
+	position: relative;
+	top: -40px;
+}
 
+.ticket-img {
+margin-top: 40px;
+/* Safari */
+-webkit-transform: rotate(-15deg);
+
+/* Firefox */
+-moz-transform: rotate(-15deg);
+
+/* IE */
+-ms-transform: rotate(-15deg);
+
+/* Opera */
+-o-transform: rotate(-15deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=.15);
+
+transform: rotate(-15deg);
+}
+
+/* about */
+
+/* photos */
+
+/* music */
+
+/* events */
+
+/* booking */
+.form-label > span > input, .form-label > span > textarea {
+	width: 100%;
+}
+
+div.wpcf7 .ajax-loader {
+	display: none;
+}
+
+/* /pages css */
+
+/* footer */
 .text-angle {
 	/* Safari */
 -webkit-transform: rotate(-2deg);
@@ -234,9 +301,7 @@ section.booking {
 
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=.2);
-
 padding-bottom: 25px;
-
 font-size: 26px;
 
 }
@@ -255,6 +320,10 @@ font-size: 26px;
 
 .footer .copyright {
 	margin-top:20px;
+}
+
+.social-menu-footer {
+	padding-bottom: 10px;
 }
 
 .social-icon-footer {
@@ -296,9 +365,12 @@ font-size: 26px;
 
 }
 @media only screen and (min-width:480px) {
-
+	
 }
 @media only screen and (min-width:768px) {
+	section.main {
+		min-height: 400px;
+	}
 	/* nav */
 	.navbar-inverse {
 		border: none;
@@ -316,13 +388,19 @@ font-size: 26px;
 	}
 }
 @media only screen and (min-width:1024px) {
-
+	section.main {
+		min-height: 580px;
+	}
 }
 @media only screen and (min-width:1140px) {
-
+	section.main {
+		min-height: 930px;
+	}
 }
 @media only screen and (min-width:1280px) {
-
+	section.main {
+		min-height: 950px;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
