@@ -118,6 +118,8 @@ function jbd_styles()
     wp_register_style( 'bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
     wp_enqueue_style( 'bootstrap');
 
+    wp_enqueue_script( 'scrollify-js', 'https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.9/jquery.scrollify.min.js', array('jquery'), '1.0.9', true); 
+
     wp_register_style('jbd', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('jbd'); // Enqueue it!
 }
