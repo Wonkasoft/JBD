@@ -75,9 +75,13 @@
 					<!-- /social -->
 						<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav')); ?>
 					</div>
-			
+			</div>
+
 			<!-- /header row -->
 			</div>
+					<div class="col-xs-12 text-center">
+					Test data
+					</div>
 			<!-- header container -->
 			</nav>
 			</section>
