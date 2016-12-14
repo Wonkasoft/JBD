@@ -103,10 +103,9 @@ section.main {
 	background-image: url('img/mainBG.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	min-height: 223px;
+	height: 100%;
 	width: 100%;
 	position: relative;
-	z-index: -1;
 }
 
 /* header */

@@ -27,6 +27,8 @@
 		<!-- wrapper -->
 		<div class="wrapper">
 
+			<!-- section -->
+			<section class="main">
 
 
 			<!-- header -->
@@ -78,8 +80,6 @@
 			</div>
 			<!-- header container -->
 			</nav>
-			<!-- section -->
-			<section class="main">
 			</section>
 			<!-- /section -->
 			</header>

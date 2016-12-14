@@ -61,10 +61,10 @@ function jbd_nav()
 	array(
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
-		'container'       => 'div',
+		'container'       => '',
 		'container_class' => 'menu-{menu slug}-container',
 		'container_id'    => '',
-		'menu_class'      => 'menu',
+		'menu_class'      => 'nav navbar-nav',
 		'menu_id'         => '',
 		'echo'            => true,
 		'fallback_cb'     => 'wp_page_menu',
