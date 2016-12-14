@@ -13,11 +13,7 @@
 \*------------------------------------*/
 /* trasitions */
 .social-list > li,
-.top-nav,
-.top-nav > div > ul,
-.top-nav > ul,
-.top-nav > div > ul > li,
-.top-nav > ul > li {
+.social-nav > li > a > img.social-img {
 	transition: all .2s ease-in-out;
 }
 
@@ -107,10 +103,9 @@ section.main {
 	background-image: url('img/mainBG.jpg');
 	background-repeat: no-repeat;
 	background-size: 100%;
-	height: 100%;
+	min-height: 223px;
 	width: 100%;
-	position: absolute;
-	top: 0;
+	position: relative;
 	z-index: -1;
 }
 
@@ -126,19 +121,6 @@ section.main {
 }
 
 /* logo */
-.logo-button {
-	width: 100px;
-}
-
-.navbar-toggle {
-	margin-right: 63%;
-	margin-top: -15px;
-}
-
-.navbar-collapse.in {
-	overflow-y: inherit;
-}
-
 .logo {
 
 }
@@ -147,67 +129,21 @@ section.main {
 }
 
 /* socials */
-.social-list {
-	list-style: none;
-	padding: 0;
-	text-align: center;
-}
-
-.social-list > li {
-	padding: 0 10px;
-	text-align: center;
-}
-
-.social-list > li:hover {
-	top: -8px;
-}
-
-.social-img {
-	max-width: 35px !important;
+.social-nav > li > a > img.social-img {
+	max-width: 25px;
 }
 
 /* nav */
-.top-nav {
-	padding-top: 20px;
-	position: relative;
-	text-align: center;
+.navbar {
+	margin-bottom: 0;
 }
 
-.top-nav > ul {
-	list-style: none;
-	padding: 0;
+.navbar-toggle {
 }
 
-.top-nav > ul > li {
-	padding: 10px 0;
-}
-
-.top-nav > ul > li:first-child {
-	/*z-index: 100;
-	background-image: url("img/eventsbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;*/
-}
-
-.top-nav > ul > li:nth-child(2) {
-	/*background-image: url("img/bookingbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 250;*/
-}
-
-.top-nav > ul > li:last-child {
-	/*background-image: url("img/galleriesbg.png");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	z-index: 100;*/
-}
-
-.top-nav > ul > li > a {
-	font-family: 'Oswaldbold';
-	font-weight: 900;
-	font-size: 12pt;
-	color: #000;
+.navbar-brand {
+	width: 100px;
+	padding: 0 15px;
 }
 
 /* sidebar */
@@ -259,7 +195,21 @@ section.main {
 
 }
 @media only screen and (min-width:768px) {
+	/* nav */
+	.navbar-inverse {
+		border: none;
+		background-color: transparent;
+	}
 
+	.navbar-brand {
+		width: 270px;
+		padding: 0 30px;
+	}
+
+	/* socials */
+	.social-nav > li > a > img.social-img {
+		width: 40px;
+	}
 }
 @media only screen and (min-width:1024px) {
 
