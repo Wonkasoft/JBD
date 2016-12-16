@@ -12,9 +12,18 @@
     MAIN
 \*------------------------------------*/
 /* trasitions */
+.top-nav,
+.top-nav>li,
+.top-nav>li>a,
+.navbar-brand,
 .booknow-btn,
+.social-nav,
 .social-list > li,
-.social-nav > li > a > img.social-img {
+.social-nav > li > a,
+.social-nav > li > a > img.social-img,
+.main-spacer,
+.live-img,
+.ticket-img {
 	transition: all .2s ease-in-out;
 }
 
@@ -159,7 +168,7 @@ section.booking {
 
 /*vertical center*/
 .vert-middle {
-	display: inline-block;
+	display: inline-flex;
 	vertical-align: middle;
 }
 
@@ -174,6 +183,11 @@ section.booking {
 /* socials */
 .social-nav > li > a > img.social-img {
 	max-width: 35px;
+	position: relative;
+}
+
+.social-nav > li > a {
+	top: 0;
 }
 
 .social-nav {
@@ -251,7 +265,8 @@ section.booking {
 }
 
 .ticket-img {
-margin-top: 40px;
+margin-top: 180px;
+width: 75%;
 /* Safari */
 -webkit-transform: rotate(-15deg);
 
@@ -396,14 +411,26 @@ font-size: 26px;
 		margin: auto;
 	}
 
+	.col-xs-12.custom-extended {
+		width: 75%;
+		padding: 0;
+	}
+
 	/* socials */
 	.social-nav {
 		margin-top: 32px;
-		width: 75%;
 	}
 
 	.social-nav > li > a > img.social-img {
 		width: 40px;
+	}
+
+	.social-nav > li > a {
+		padding-right: 5px;
+	}
+
+	.social-nav > li > a:hover {
+		top: -8px;
 	}
 
 	.top-nav {
@@ -429,7 +456,7 @@ font-size: 26px;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		position: absolute;
-		left: 0;
+		left: -80px;
 		z-index: 100;
 	}
 
@@ -438,7 +465,7 @@ font-size: 26px;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		position: absolute;
-		left: 48%;
+		left: 18px;
 		z-index: 250;
 	}
 
@@ -447,7 +474,7 @@ font-size: 26px;
 		background-repeat: no-repeat;
 		background-size: 100%;
 		position: absolute;
-		left: 105%;
+		left: 140px;
 		z-index: 100;
 	}
 
@@ -457,25 +484,112 @@ font-size: 26px;
 		top: 30px;
 	}
 
+	.main-spacer {
+		margin-top: 30px;
+	}
+
+	.container.custom-extended {
+		width: 100%;
+	}
+
+
+}
+@media only screen and (min-width:992px) {
+	.social-nav > li > a {
+		padding-right: 15px;
+	}
+
+	.top-nav>li:first-child {
+		left: -20px;
+	}
+
+	.top-nav>li:nth-child(2) {
+		left: 85px;
+	}
+
+	.top-nav>li:last-child {
+		left: 210px;
+	}
+
+	.main-spacer {
+		margin-top: 75px;
+	}
+
+	.ticket-img {
+		margin-top: 150px;
+	}
+
 }
 @media only screen and (min-width:1024px) {
 	section.main {
-		min-height: 580px;
+		min-height: 630px;
+	}
+
+	.top-nav {
+		margin: 34px;
+	}
+
+	/* socials */
+	.social-nav {
+		margin-top: 33px;
+	}
+
+	.main-spacer {
+		margin-top: 100px;
 	}
 }
 @media only screen and (min-width:1140px) {
 	section.main {
-		min-height: 930px;
+		min-height: 900px;
+	}
+
+	.navbar-brand {
+		width: 260px;
+	}
+
+	.top-nav {
+		margin: 72px;
+	}
+
+	/* socials */
+	.social-nav {
+		margin-top: 71px;
+	}
+
+	.main-spacer {
+		margin-top: 125px;
+	}
+
+	.ticket-img {
+		margin-top: 220px;
 	}
 }
 @media only screen and (min-width:1280px) {
 	section.main {
 		min-height: 950px;
 	}
+
+	.top-nav {
+		margin: 78px;
+	}
+
+	/* socials */
+	.social-nav {
+		margin-top: 77px;
+		margin-left: 100px;
+	}
+
+	.main-spacer {
+		margin-top: 255px;
+	}
+
+	.ticket-img {
+		margin-top: 100px;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio:1.5),
 	   only screen and (min-resolution:144dpi) {
-
+	   	
 }
 
 /*------------------------------------*\
