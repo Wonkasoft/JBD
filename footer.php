@@ -1,22 +1,22 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
+			 <div class="container-fluid">
 				<div class="row">
-					<div class="container-fluid">
 						<!-- sogin -->
 						<div class="col-xs-12 text-center text-angle">
 						"What will Jethro do? What will Hethro Play? What will Jethro SAY?"
 						</div>
 
 						<!-- Social Media Menu -->
-						<div class="col-xs-12 text-center">
-							<div class="col-xs-12 col-md-4">
-								<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="" />/JethroBoDidley</a>
+						<div class="col-xs-12 col-md-6 col-md-push-3 text-center">
+							<div class="col-xs-12 col-md-4 social-menu-footer">
+							<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="" /> /JethroBoDidley &nbsp;</a>
 							</div>
-							<div class="col-xs-12 col-md-4">
-							<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="" />@JethroBoDidley</a>
+							<div class="col-xs-12 col-md-4 social-menu-footer">
+							<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/twitter.svg" alt="" /> @JethroBoDidley</a>
 							</div>
-							<div class="col-xs-12 col-md-4">
-								<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="" />@JethroBoDidley</a>
+							<div class="col-xs-12 col-md-4 social-menu-footer">
+							<a href="#"><img class="social-icon-footer" src="<?php echo get_template_directory_uri(); ?>/img/instagram.svg" alt="" /> @JethroBoDidley</a>
 							</div>
 						</div>
 						<!-- copyright -->
@@ -31,9 +31,9 @@
 					</footer>
 					<!-- /footer -->
 				</div>
-				<!-- end of container -->
-			</div>
 			<!-- end of row -->
+			</div>
+				<!-- end of container -->
 
 		</div>
 		<!-- /wrapper -->

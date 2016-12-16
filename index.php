@@ -80,7 +80,8 @@
     <div class="container-fluid"> 
       <div class="row">
         <div class="col-xs-12 text-center">
-         [contact-form-7 id="147" title="Booking-Form"]
+        <!-- Use shortcodes in form like Landing Page Template. -->
+          <?php echo do_shortcode( '[contact-form-7 id="147" title="Booking-Form"]' ); ?>
        </div>
      </div> <!-- End of row -->
    </div> <!-- End of container -->
