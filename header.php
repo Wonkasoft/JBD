@@ -34,7 +34,7 @@
 			<!-- header -->
 			<header class="header clear" role="banner">
 
-			<nav class="navbar">
+			<nav class="navbar navbar-inverse">
 
 			<!-- header container -->
 			<div class="container-fluid">
@@ -42,17 +42,20 @@
 			<!-- header row -->
 			<div class="navbar-header">
 					
-					<button type="button" class="navbar-toggle logo-button" data-toggle="collapse" data-target="#myNavbar">
-					<!-- logo -->
-					<div class="logo">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="img-responsive logo-img">
-					</div>
-					<!-- /logo -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#JBDNavbar">
+						<span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
 					</button>
-					<div class="collapse navbar-collapse" id="myNavbar">
+					<a class="navbar-brand" href="#"><!-- logo -->
+						<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="img-responsive logo-img">
+						<!-- /logo -->
+					</a>
+			</div>
+					<div class="collapse navbar-collapse" id="JBDNavbar">
 					<!-- social -->
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav social-nav">
 						<li>
 							<a href="<?php echo home_url(); ?>">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/facebook.svg" alt="facebook" class="img-responsive social-img">
@@ -70,12 +73,10 @@
 						</li>
 					</ul>
 					<!-- /social -->
-						<?php jbd_nav(); ?>
+						<?php wp_nav_menu(array('menu_class' => 'nav navbar-nav')); ?>
 					</div>
-
-
-
 			</div>
+
 			<!-- /header row -->
 			</div>
 					<div class="col-xs-12 text-center">
