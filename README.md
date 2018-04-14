@@ -5,7 +5,7 @@ Custom Built for JBD
 * Project: [github.com/wonkasoft/JBD](https://github.com/wonkasoft/JBD)
 * Website: [wonkasoft.com](http://wonkasoft.com)
 * Twitter: [@wonkasoft](http://twitter.com/wonkasoft)
-* Author : [Louis Lister](http://wonkasoft.com) // [@devturtle](http://twitter.com/devturtle)
+* Author : [Louis Lister](http://wonkasoft.com) // [@devturtle](http://twitter.com/devturtle2015)
 * Author : [Rudy Lister](http://wonkasoft.com) // [@WILvoiceDERNESS](http://twitter.com/WILvoiceDERNESS)
 
 ## Contributors (in order of pull request)
